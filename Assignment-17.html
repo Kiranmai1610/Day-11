@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>USERNAME VALIDATION</title>
+  </head>
+  <body>
+    <h2>USERNAME VALIDATION</h2>
+    <form action="./response.html" method="post">
+      <input
+        type="text"
+        name="username"
+        id="username"
+        required
+        placeholder="Enter Username"
+        pattern="(?.*[A-Z])(?.*[!@#$&])[a-zA-Z\d!@#$&]{8,16}"
+        title="enter username 1 capital & 1 special symbol"
+      />
+      <br />
+      <input type="submit" />
+    </form>
+  </body>
+</html>
